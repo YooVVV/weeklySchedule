@@ -31,7 +31,7 @@ Functions:
 
 - delete schedule:
     
-    - [ ]delete the schedule data
+    - [ ] delete the schedule data
   
     - [ ] deleted schedule will not be recovered
 
