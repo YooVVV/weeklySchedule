@@ -83,4 +83,5 @@ A event has title (string), description (string), start time (date), end time (d
 **Wireframes**
 
 - Starting page
-![Starting Page](https://drive.google.com/uc?export=view&id=1vRoRjboV0FGC9QH4_fvDbgAA8DMGm4fi)
+  
+  https://drive.google.com/file/d/1vRoRjboV0FGC9QH4_fvDbgAA8DMGm4fi/view?usp=sharing
