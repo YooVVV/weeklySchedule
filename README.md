@@ -79,3 +79,8 @@ A schedule has ID (string), list of events (arraylist).
 
 A event has title (string), description (string), start time (date), end time (date), days
  of week (string).
+
+**Wireframes**
+
+- Starting page
+![Starting Page](https://drive.google.com/file/d/1vRoRjboV0FGC9QH4_fvDbgAA8DMGm4fi/view?usp=sharing)
