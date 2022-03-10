@@ -45,3 +45,30 @@ Functions:
     - [ ] same events will be the same color
   
     - [ ] the schedule will be static and not be interactive in *milestone 2*
+    
+Using:
+
+- Enter the app and seeing 2 selection on the screen: add, choose.
+   
+- In add page, user can add schedule.
+
+- If a user click on add schedule, the app will redirect to a new page with an empty list.
+   
+- Click on a button to add event to the schedule.
+
+- Adding new event will be on a page and after filling all information and user can click on the
+ button to finish adding the new event.
+  
+- Added events will be in the list.
+
+- Clicking on "SAVE" to save changes.
+
+- In choose page, user can choose schedule to display.
+
+- Displaying all events of a schedule.
+
+- In the display page, user can choose to edit or delete the schedule.
+
+- Clicking on "EDIT" will redirect to the list of the schedule.
+
+- Clicking on "DELETE" will delete the schedule and return to the schedule list.
