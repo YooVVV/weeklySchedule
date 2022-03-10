@@ -72,3 +72,10 @@ Using:
 - Clicking on "EDIT" will redirect to the list of the schedule.
 
 - Clicking on "DELETE" will delete the schedule and return to the schedule list.
+
+**Data structure**
+
+A schedule has ID (string), list of events (arraylist).
+
+A event has title (string), description (string), start time (date), end time (date), days
+ of week (string).
