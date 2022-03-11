@@ -78,7 +78,7 @@ Using:
 A schedule has ID (string), list of events (arraylist).
 
 A event has title (string), description (string), start time (date), end time (date), days
- of week (int).
+ of week (int array).
 
 **Wireframes**
 
