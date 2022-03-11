@@ -95,4 +95,22 @@ public class Event {
     public boolean isValid() {
         return days.length == 7 && end_time.after(start_time);
     }
+
+    /**
+     * @Description
+     * This method override equals function. If all variables of two events, it will return
+     *  true. If any variable is different, it will return false.
+     */
+    public boolean equals(Event event) {
+        for (int i=0; i<7; i++) {
+            if (this.days[i] != event.getDays()[i]) {
+                return false;
+            }
+        }
+
+        return this.title.equals(event.getTitle()) &&
+                this.description.equals(event.getDescription()) &&
+                this.start_time.equals(event.getStart_time()) &&
+                this.end_time.equals(event.getEnd_time());
+    }
 }
