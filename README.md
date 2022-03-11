@@ -103,7 +103,7 @@ A event has title (string), description (string), start time (date), end time (d
   https://drive.google.com/file/d/1R32fb_cE0irAjTzYaLQqLWCJkkeMphOW/view?usp=sharing
 
 
-### Milestone 2
+### Milestone 2:
 
 **Expected due date**: 2022.04.10
 
@@ -111,3 +111,6 @@ A event has title (string), description (string), start time (date), end time (d
 
 1. As a user, I want to be able to access two pages from main page, so that I can add a new schedule
  or select saved schedules.
+   
+2. As a user, I want to access a list of events of schedule, so that I can see the events in
+a schedule.
