@@ -10,7 +10,7 @@ schedule, editing schedule and deleting schedule. All the functions above will b
 
 ### Milestone 1:
 
-**Expected due date**: 2022.3.20
+**Expected due date**: 2022.03.20
 
 **Brainstorm**: 
 
@@ -101,3 +101,13 @@ A event has title (string), description (string), start time (date), end time (d
 - Schedule Display Page
 
   https://drive.google.com/file/d/1R32fb_cE0irAjTzYaLQqLWCJkkeMphOW/view?usp=sharing
+
+
+### Milestone 2
+
+**Expected due date**: 2022.04.10
+
+**User Stories**
+
+1. As a user, I want to be able to access two pages from main page, so that I can add a new schedule
+ or select saved schedules.
