@@ -129,3 +129,5 @@ a schedule.
    
 8. As a user, I want to access event list of a schedule after saving, so that I can edit it and
  make changes.
+   
+9. As a user, I want to remove an event from event list, so that I can remove an unuseful event.
