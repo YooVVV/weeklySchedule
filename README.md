@@ -122,3 +122,6 @@ a schedule.
 5. As a user, I want to keep event description blank, so that I can add a event without description.
 
 6. As a user, I want to access a list of saved schedules, so that I can select a schedule to display.
+
+7. As a user, I want to add an event in multiple days of a week, so that I can have the same event
+ few times in a week.
