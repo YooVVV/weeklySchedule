@@ -97,3 +97,7 @@ A event has title (string), description (string), start time (date), end time (d
 - Schedule List Page
 
   https://drive.google.com/file/d/16P2rXG9XMqum5ahtaz3JPS0_5rwLUkP3/view?usp=sharing
+
+- Schedule Display Page
+
+  https://drive.google.com/file/d/1R32fb_cE0irAjTzYaLQqLWCJkkeMphOW/view?usp=sharing
