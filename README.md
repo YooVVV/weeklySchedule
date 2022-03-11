@@ -88,7 +88,7 @@ A event has title (string), description (string), start time (date), end time (d
 
 - Event List Page
 
-  https://drive.google.com/file/d/1X73UW3vLTsqTuNh2DD7w3vdbZm6hJmzS/view?usp=sharing
+  https://drive.google.com/file/d/1mVjhjaomMnaCfc6iywZu1KdwsphRFyel/view?usp=sharing
 
 - New Event Page
 
