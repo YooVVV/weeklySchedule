@@ -131,3 +131,5 @@ a schedule.
  make changes.
    
 9. As a user, I want to remove an event from event list, so that I can remove an unuseful event.
+
+10. As a user, I want to remove a schedule, so that I can remove an unuseful schedule.
