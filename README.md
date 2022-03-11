@@ -40,7 +40,7 @@ Functions:
   
     - [ ] display 7 days of a week and start with Monday
   
-    - [ ] the start time of a day will be 6 am and the end time will be 9 pm
+    - [ ] the start time of a day will be 4 am and the end time will be 4 am
   
     - [ ] same events will be the same color
   
