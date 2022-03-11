@@ -118,3 +118,5 @@ a schedule.
 3. As a user, I want to have a button in events list, so that I can add a new event.
 
 4. As a user, I want to fill all the section in New Event Page, so that I can add a new event.
+
+5. As a user, I want to keep event description blank, so that I can add a event without description.
