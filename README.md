@@ -114,3 +114,5 @@ A event has title (string), description (string), start time (date), end time (d
    
 2. As a user, I want to access a list of events of schedule, so that I can see the events in
 a schedule.
+   
+3. As a user, I want to have a button in events list, so that I can add a new event.
