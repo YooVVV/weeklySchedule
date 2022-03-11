@@ -120,3 +120,5 @@ a schedule.
 4. As a user, I want to fill all the section in New Event Page, so that I can add a new event.
 
 5. As a user, I want to keep event description blank, so that I can add a event without description.
+
+6. As a user, I want to access a list of saved schedules, so that I can select a schedule to display.
