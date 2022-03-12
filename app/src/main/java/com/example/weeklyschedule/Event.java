@@ -113,4 +113,26 @@ public class Event {
                 this.start_time.equals(event.getStart_time()) &&
                 this.end_time.equals(event.getEnd_time());
     }
+
+    /**
+     * @Description
+     * This method will check if the two events have a conflict time.
+     */
+    public boolean isConflict(Event event) {
+        for (int i=0; i<7; i++) {
+            if (this.days[i] == 1 && event.getDays()[i] == 1) {
+                if (this.start_time.before(event.getStart_time()) ||
+                        this.start_time.equals(event.getStart_time())) {
+                    return this.end_time.after(event.getStart_time());
+                }
+
+                if (event.getStart_time().before(this.start_time) ||
+                        event.getStart_time().equals(this.start_time)) {
+                    return event.getEnd_time().after(this.start_time);
+                }
+            }
+        }
+
+        return true;
+    }
 }
