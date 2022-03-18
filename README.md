@@ -77,8 +77,10 @@ Using:
 
 A schedule has name (string), list of events (arraylist).
 
-A event has title (string), description (string), start time (date), end time (date), days
+A event has title (string), description (string), start time (TimeOfDay), end time (TimeOfDay), days
  of week (int array).
+
+TimeOfDay has hour (int), minute (int).
 
 **Wireframes**
 
