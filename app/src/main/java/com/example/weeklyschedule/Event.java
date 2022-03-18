@@ -1,14 +1,12 @@
 package com.example.weeklyschedule;
 
-import java.time.LocalTime;
-import java.util.Date;
-
 public class Event {
     protected String title;
     protected String description;
-    protected Date start_time;
-    protected Date end_time;
+    protected TimeOfDay start_time;
+    protected TimeOfDay end_time;
     protected int[] days;
+    private static String timePattern = "HH:mm";
 
     /**
      * @Description
@@ -16,9 +14,9 @@ public class Event {
      */
     public Event() {
         title = "no title";
-        description = "";
-        start_time = new Date();
-        end_time = new Date();
+        description = "no description";
+        start_time = new TimeOfDay();
+        end_time = new TimeOfDay();
         days = new int[]{0, 0, 0, 0, 0, 0, 0};
     }
 
@@ -26,9 +24,9 @@ public class Event {
      * @Description
      * The second constructor is for the event does not have description.
      */
-    public Event(String title, Date start_time, Date end_time, int[] days) {
+    public Event(String title, TimeOfDay start_time, TimeOfDay end_time, int[] days) {
         this.title = title;
-        description = "";
+        description = "no description";
         this.start_time = start_time;
         this.end_time = end_time;
         this.days = days;
@@ -38,7 +36,7 @@ public class Event {
      * @Description
      * The third constructor is for the event has all information.
      */
-    public Event(String title, String description, Date start_time, Date end_time, int[] days) {
+    public Event(String title, String description, TimeOfDay start_time, TimeOfDay end_time, int[] days) {
         this.title = title;
         this.description = description;
         this.start_time = start_time;
@@ -62,19 +60,19 @@ public class Event {
         this.description = description;
     }
 
-    public Date getStart_time() {
+    public TimeOfDay getStart_time() {
         return this.start_time;
     }
 
-    public void setStart_time(Date start_time) {
+    public void setStart_time(TimeOfDay start_time) {
         this.start_time = start_time;
     }
 
-    public Date getEnd_time() {
+    public TimeOfDay getEnd_time() {
         return this.end_time;
     }
 
-    public void setEnd_time(Date end_time) {
+    public void setEnd_time(TimeOfDay end_time) {
         this.end_time = end_time;
     }
 
@@ -84,6 +82,20 @@ public class Event {
 
     public void setDays(int[] days) {
         this.days = days;
+    }
+
+    public String toString() {
+        String result = this.title + "\n" + this.description +
+                "\n" + this.start_time +
+                " " + this.end_time + "\n";
+        String[] week = {"Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday", "Saturday", "Sunday"};
+        for (int i=0; i<7; i++) {
+            if (days[i] == 1) {
+                result += week[i] + " ";
+            }
+        }
+        return result;
     }
 
     /**
@@ -98,7 +110,7 @@ public class Event {
 
     /**
      * @Description
-     * This method override equals function. If all variables of two events, it will return
+     * This method override equals function. If each variables of two events equal, it will return
      *  true. If any variable is different, it will return false.
      */
     public boolean equals(Event event) {
