@@ -32,6 +32,14 @@ public class Schedule {
         this.events = events;
     }
 
+    public String toString() {
+        String result = this.name;
+        for (Event event: this.events) {
+            result += "\n" + event;
+        }
+        return result;
+    }
+
     /**
      * @Description
      * addEvent(Event) will check if the event can be added before adding
