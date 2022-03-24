@@ -16,6 +16,9 @@
             android:name=".ScheduleListActivity"
             android:exported="true" />
         <activity
+            android:name=".NewEventActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
