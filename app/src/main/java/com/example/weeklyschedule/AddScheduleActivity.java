@@ -18,6 +18,8 @@ import java.util.ArrayList;
 public class AddScheduleActivity extends AppCompatActivity
         implements View.OnClickListener, EventListAdapter.ItemClickListener {
     protected Button cancel;
+    protected Button save_btn;
+    protected Button plus_btn;
     protected ArrayList<Event> events;
     protected SQLiteDatabase db;
     protected RecyclerView eventList;
@@ -32,6 +34,11 @@ public class AddScheduleActivity extends AppCompatActivity
 
         cancel = findViewById(R.id.add_schedule_activity_cancle_btn);
         cancel.setOnClickListener(this);
+        save_btn = findViewById(R.id.add_schedule_activity_save_btn);
+        save_btn.setOnClickListener(this);
+        plus_btn = findViewById(R.id.add_schedule_activity_plus_btn);
+        plus_btn.setOnClickListener(this);
+
         eventList = findViewById(R.id.add_schedule_activity_event_list);
         events = new ArrayList<Event>();
         schedule_name = findViewById(R.id.add_schedule_activity_name);
@@ -80,6 +87,7 @@ public class AddScheduleActivity extends AppCompatActivity
     }
 
     public void addEvent() {
+        System.out.println("New Event Page");
         Intent intent = new Intent(this, NewEventActivity.class);
         intent.putExtra("schedule", schedule);
         startActivity(intent);
