@@ -106,4 +106,23 @@ public class TimeOfDay {
 
         return h + ":" + m;
     }
+
+    public static TimeOfDay destructTime(String time) {
+        if (time.length() != 5) {
+            return new TimeOfDay();
+        }
+
+        if (time.charAt(2) != ':') {
+            return new TimeOfDay();
+        }
+
+        String h = time.substring(0, 2);
+        String m = time.substring(3, 5);
+        if (!h.chars().allMatch(Character::isDigit) ||
+                !m.chars().allMatch(Character::isDigit)) {
+            return new TimeOfDay();
+        }
+
+        return new TimeOfDay(Integer.parseInt(h), Integer.parseInt(m));
+    }
 }
