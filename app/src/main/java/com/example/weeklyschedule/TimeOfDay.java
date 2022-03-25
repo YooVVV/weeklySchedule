@@ -51,17 +51,7 @@ public class TimeOfDay {
     }
 
     public String toString() {
-        String h, m;
-        h = String.valueOf(hour);
-        m = String.valueOf(minute);
-        if (hour < 10) {
-            h = "0" + h;
-        }
-        if (minute < 10) {
-            m = "0" + m;
-        }
-
-        return h + ":" + m;
+        return structTime(hour, minute);
     }
 
     /**
@@ -101,5 +91,19 @@ public class TimeOfDay {
             return false;
         }
         return true;
+    }
+
+    public static String structTime(int hour, int minute) {
+        String h, m;
+        h = String.valueOf(hour);
+        m = String.valueOf(minute);
+        if (hour < 10) {
+            h = "0" + h;
+        }
+        if (minute < 10) {
+            m = "0" + m;
+        }
+
+        return h + ":" + m;
     }
 }
