@@ -101,4 +101,22 @@ public class TimeOfDayUnitTest {
 
         assertFalse(tod1.after(tod2));
     }
+
+    @Test
+    public void destructTimeSuccess() {
+        String time = "05:30";
+
+        TimeOfDay tod = TimeOfDay.destructTime(time);
+
+        assertTrue(new TimeOfDay(5, 30).equals(tod));
+    }
+
+    @Test
+    public void destructTimeFail() {
+        String time = "0530";
+
+        TimeOfDay tod = TimeOfDay.destructTime(time);
+
+        assertFalse(new TimeOfDay(5, 30).equals(tod));
+    }
 }
