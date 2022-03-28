@@ -20,7 +20,7 @@
     <EditText
         android:id="@+id/new_event_description"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:layout_marginTop="30dp"
         android:ems="10"
         android:gravity="start|top"
@@ -80,7 +80,7 @@
         android:id="@+id/new_event_save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="100dp"
         android:text="SAVE"
         app:layout_constraintEnd_toStartOf="@+id/new_event_cancel_btn"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,10 +90,76 @@
         android:id="@+id/new_event_cancel_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="100dp"
         android:text="CANCEL"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/new_event_save_btn"
         app:layout_constraintTop_toBottomOf="@+id/new_event_end_time" />
 
+    <HorizontalScrollView
+        android:id="@+id/new_event_days_view"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/new_event_save_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_event_end_time">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/new_event_days_view"
+            app:layout_constraintStart_toStartOf="@+id/new_event_days_view"
+            app:layout_constraintBottom_toBottomOf="@+id/new_event_days_view"
+            app:layout_constraintEnd_toEndOf="@+id/new_event_days_view">
+
+            <TextView
+                android:id="@+id/new_event_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textSize="30sp"
+                android:layout_marginEnd="20dp" />
+            <TextView
+                android:id="@+id/new_event_tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textSize="30sp"
+                android:layout_marginEnd="20dp" />
+            <TextView
+                android:id="@+id/new_event_wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:textSize="30sp"
+                android:layout_marginEnd="20dp" />
+            <TextView
+                android:id="@+id/new_event_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:textSize="30sp"
+                android:layout_marginEnd="20dp" />
+            <TextView
+                android:id="@+id/new_event_fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:textSize="30sp"
+                android:layout_marginEnd="20dp" />
+            <TextView
+                android:id="@+id/new_event_sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saturday"
+                android:textSize="30sp"
+                android:layout_marginEnd="20dp" />
+            <TextView
+                android:id="@+id/new_event_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
