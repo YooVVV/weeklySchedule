@@ -18,7 +18,7 @@ Functions:
 
 - create/edit schedule:
     
-    - [ ] add new event with title, description, start time, end time
+    - [x] add new event with title, description, start time, end time
     
     - [ ] conflict time is not available in *milestone 2*
     
