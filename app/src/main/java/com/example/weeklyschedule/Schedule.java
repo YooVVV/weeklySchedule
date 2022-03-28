@@ -1,8 +1,9 @@
 package com.example.weeklyschedule;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Schedule {
+public class Schedule implements Serializable {
     protected String name;
     protected ArrayList<Event> events;
 
